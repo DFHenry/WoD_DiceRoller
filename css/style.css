@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+
+/*Basic Rules*/
+:root
+{   
+    --passGreen: #00B518;
+
+    --vampRed: #75031A;
+    --wolfGreen: #4A6D41;
+    --huntOrange: #F58220;
+}
+
+html
+{
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+    background-color: black;
+}
+
+img
+{
+    margin: 5px;
+    width: 60px;
+}
+
+header
+{
+    background-color: black;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1
+{
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.875em;
+    color: white;
+    text-align: center;
+    margin: 0 30px;
+    padding: 0;
+}
+
+p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+button
+{
+    width: 20%;
+    height: 42px;
+    border-radius: 6px;
+    margin: 15px 24px;
+    background-color: white;
+    border-color: #00000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+input[type=button]
+{
+    width: 276px;
+    height: 76px;
+    border-radius: 27px;
+    background-color: var(--vampRed);
+    border-style: none;
+    color: white;
+    padding: 0;
+    margin: 23px 0 23px 0;
+}
+
+/*Layouts*/
+
+/* header */
+#gameSelect
+{
+    display: flex;
+    justify-content: center;
+}
+
+#welcome
+{
+    color: white;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+/* Dice Box */
+#diceBox
+{
+    display: none;
+    border-style: solid;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+
+#diceArea
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diceAreaLeft
+{
+    width: 138px;
+    height: 42px;
+    background-color: var(--vampRed);
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.diceAreaRight
+{
+    width: 138px;
+    height: 40px;
+    border: 1px inset black;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diceAreaRight img
+{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+
+
+#instruction
+{
+    margin: 10px 30px;
+}
+
+.diceAreaItem
+{
+    display: flex;
+    flex-direction: row;
+    margin: 18px 40px;
+}
+
+.diceAreaItem label
+{
+    display: inline-block;
+    width: 138px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    background-color: var(--vampRed);
+    text-align: center;
+    vertical-align: bottom;
+    color: white;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.diceAreaItem input
+{
+    width: 138px;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: 1px inset black;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.diceAreaRight input
+{
+    width: 45px;
+    height: 34px;
+    border-style: none;
+    border-radius: 0;
+    background-color: aliceblue;
+}
+
+#diceItem4
+{
+    margin-top: 0;
+}
+
+#diceItem4 label
+{
+    width: 175px;
+    background-color: white;
+    color: black;
+    padding-top: 0;
+    padding-bottom: 7px;
+    font-size: 1.25em;
+}
+
+#diceItem4 input
+{
+    width: 28px;
+    height: 28px;
+}
+
+#rollDice
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25em;
+}
+
+#makeCheck
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25em;
+}
+
+#diceContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#diceContainer p
+{
+    margin: 0;
+}
+
+#diceImages
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#result
+{
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px)
+{
+    img
+    {
+        margin: 4px;
+        width: 45px;
+    }
+
+    button
+    {
+        font-size: 0.85em;
+    }
+
+    input[type=button]
+    {
+        width: 150px;
+        height: 50px;
+        border-radius: 27px;
+        background-color: var(--vampRed);
+        border-style: none;
+        color: white;
+        padding: 0;
+        margin: 15px 0 15px 0;
+    }
+
+    .diceAreaItem label
+{
+    display: inline-block;
+    width: 100px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    font-size: 1em;
+}
+
+    #rollDice
+    {
+        font-size: 1.5em;
+    }
+
+    #makeCheck
+    {
+        font-size: 1.5em;
+    }
+}
