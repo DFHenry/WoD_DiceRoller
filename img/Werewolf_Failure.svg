@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Werewolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0d0d0d;
+      }
+
+      .cls-2 {
+        fill: #4a6d41;
+      }
+    </style>
+  </defs>
+  <g id="Werewolf_NBG">
+    <g>
+      <rect class="cls-2" x=".5" y=".5" width="39" height="39" rx="11.5" ry="11.5"/>
+      <path class="cls-1" d="M28,1c6.07,0,11,4.93,11,11v16c0,6.07-4.93,11-11,11H12c-6.07,0-11-4.93-11-11V12C1,5.93,5.93,1,12,1h16M28,0H12C5.4,0,0,5.4,0,12v16c0,6.6,5.4,12,12,12h16c6.6,0,12-5.4,12-12V12c0-6.6-5.4-12-12-12h0Z"/>
+    </g>
+  </g>
+</svg>
