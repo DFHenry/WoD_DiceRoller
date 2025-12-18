@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>World of Darkness 5th Edition Dice Roller</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <script src="./js/dice.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">World of Darkness 5th Edition Dice Roller</h1>
+    </header>
+    <div id="gameSelect">
+        <button class="gameButton" id="vampButton" value="1">Vampire</button>
+        <button class="gameButton" id="wolfButton" value="2">Werewolf</button>
+        <button class="gameButton" id="huntButton" value="3">Hunter</button>
+    </div>
+
+        
+    <p id="welcome">Welcome to the World of Darkness Dice Roller! Select your game above to begin!</p>
+    <div id="diceBox">
+        <form>
+            <div id="diceArea">
+                <p id="instruction"></p>
+                <div class="diceAreaItem" id="diceItem1">
+                    <div class="diceAreaLeft" id="diceLabel1">
+                        <p class="diceLabel">Dice Pool:</p>
+                    </div>
+                    <div class="diceAreaRight">
+                        <img id="dicePoolDown" src="./img/downArrow.svg" alt="down arrow">
+                        <input id="dicePool" type="text" name="dicePoolNew" value="1" autocomplete="off">
+                        <img id="dicePoolUp" src="./img/upArrow.svg" alt="up arrow">
+                    </div>
+                </div>
+                <div class="diceAreaItem" id="diceItem2">
+                    <div class="diceAreaLeft" id="diceLabel2">
+                        <p class="diceLabel">Trait:</p>
+                    </div>
+                    <div class="diceAreaRight">
+                        <img id="specialTraitDown" src="./img/downArrow.svg" alt="down arrow">
+                        <input id="specialTrait" type="text" name="traitValue" value="1" autocomplete="off">
+                        <img id="specialTraitUp" src="./img/upArrow.svg" alt="up arrow">
+                    </div>
+                </div>                
+                <div class="diceAreaItem" id="diceItem3">
+                    <div class="diceAreaLeft" id="diceLabel3">
+                        <p class="diceLabel">Difficulty:</p>
+                    </div>
+                    <div class="diceAreaRight">
+                        <img id="difficultyDown" src="./img/downArrow.svg" alt="down arrow">
+                        <input id="difficulty" type="text" name="difficulty" value="1" autocomplete="off">
+                        <img id="difficultyUp" src="./img/upArrow.svg" alt="up arrow">
+                    </div>
+                </div>
+                <div class="diceAreaItem" id="diceItem4">
+                    <label id="desperationLabel" for="desperation">Use Desperation:</label><input id="desperation" type="checkbox" name="desperation">
+                </div>
+                
+                <input type="button" id="rollDice" name="rollDice" value="Roll Dice">
+
+                <div id="diceImages">
+
+                </div>
+                
+                <p id="result"></p>
+
+                <input type="button" id="makeCheck" name="makeCheck" value="Make Check">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
